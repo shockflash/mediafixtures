@@ -37,12 +37,14 @@ class Command(NoArgsCommand):
 
 def copytree(src, dst, symlinks = False, ignore = None):
     """
-    Copied from Python 2.6 to add the following line: 
+    Licence for this function: 
+    PYTHON SOFTWARE FOUNDATION LICENSE VERSION 2    
+    http://www.opensource.org/licenses/Python-2.0
     
-      if not os.path.isdir(dst):
+    Copied from Python 2.6 to add the following line:     
+      if not os.path.isdir(dst):         
     
-    this way, we can copy/overwrite existing directories. Very important here
-    
+    this way, we can copy/overwrite existing directories. Very important here    
     If anyone knows a better way, say it
     """
     names = os.listdir(src)
